@@ -19,6 +19,6 @@ public class Item {
     }
 
     public int getPrice() {
-        return 1;
+        return price;
     }
 }
