@@ -85,16 +85,16 @@ class RestaurantTest {
     public void get_total_order_value_should_return_sum_of_all_selected_menu_items() {
         List<String> itemNames = new ArrayList<String>();
         itemNames.add("Sweet corn soup");
-        assertEquals(119,restaurant.getTotalPrice(itemNames));
+        assertEquals(119,restaurant.getOrderValue(itemNames));
 
         itemNames.add("Vegetable lasagne");
-        assertEquals(388,restaurant.getTotalPrice(itemNames));
+        assertEquals(388,restaurant.getOrderValue(itemNames));
     }
 
     @Test
     public void get_total_order_value_should_return_0_when_no_items_are_selected() {
         List<String> itemNames = new ArrayList<String>();
-        assertEquals(0,restaurant.getTotalPrice(itemNames));
+        assertEquals(0,restaurant.getOrderValue(itemNames));
     }
     //<<<<<<<<<<<<<<<<<<<<<<ORDER TOTAL>>>>>>>>>>>>>>>>>>>>>>>>>
 }

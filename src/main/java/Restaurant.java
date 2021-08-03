@@ -71,7 +71,7 @@ public class Restaurant {
         return name;
     }
 
-    public int getTotalPrice(List<String> itemNames){
+    public int getOrderValue(List<String> itemNames){
         return 1;
     }
 }
